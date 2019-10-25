@@ -1,0 +1,25 @@
+.search {
+    width: 100%;
+    text-align:center;
+}
+
+nav {
+    margin-top: 5%;
+}
+
+img {
+    width: 100%;
+    padding-bottom: 1em;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 5%;
+}
+
+.caption {
+    display: none;
+}
