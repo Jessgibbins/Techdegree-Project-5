@@ -23,3 +23,25 @@ ul {
 .caption {
     display: none;
 }
+
+/* ---------- MEDIA QUERIES ---------- */
+
+@media (min-width: 768px) {
+
+    .photos {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: center;
+    }
+
+    li {
+        display: flex;
+        width: 25%;
+        padding: 1em;
+    }
+
+    img {
+        padding: 0;
+    }
+}
