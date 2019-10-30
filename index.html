@@ -4,80 +4,83 @@
         <meta charset="utf-8">
         <title>Photo Gallery</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="tipuesearch/css/tipuesearch.css">
-        <link href="lightbox/dist/css/lightbox.min.css" rel="stylesheet" />
-        <link  href="css/styles.css" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="lightbox/src/css/lightbox.css">
+         <script src="jquery-3.4.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <body>
-        <section class="search">
-            <form>
-                <div class="tipue_search_group">
-                <input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><button type="submit" class="tipue_search_button"><div class="tipue_search_icon">&#9906;</div></button>
-                </div>
-            </form>
+        <section class="search"> 
+                <input id="myInput" type="text" placeholder="Search..">
         </section>   
+
         <section class="gallery">
-            <div id="tipue_search_content">
-            <ul class="photos">
+            <ul class="photos" id="myList">
                 <li>
-                    <a href="images/photos/01.jpg" data-lightbox="imgage" data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
-                    <img src="Images/photos/01.jpg" alt="Hay Bales"></a>
+                    <p id="one">I love hay bales. Took this snap on a drive through the countryside past some straw fields.</p>
+                    <a href="images/photos/01.jpg" data-lightbox="imgage"><!--data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields.-->
+                    <img src="Images/photos/01.jpg" alt="Hay Bales" id="myList"></a>
                 </li>
                 <li>
+                    <p>The lake was so calm today. We had a great view of the snow on the mountains from here.</p>
                     <a href="images/photos/02.jpg" data-lightbox="imgage" data-title="The lake was so calm today. We had a great view of the snow on the mountains from here.">
                     <img src="Images/photos/02.jpg" alt="Lake"></a>
                     
                 </li>
                 <li>
+                    <p>I hiked to the top of the mountain and got this picture of the canyon and trees below.</p>
                     <a href="images/photos/03.jpg" data-lightbox="imgage" data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below.">
                     <img src="Images/photos/03.jpg" alt="Canyon"></a>
                 </li>
                 <li>
+                    <p>It was amazing to see an iceberg up close, it was so cold but didn’t snow today.</p>
                     <a href="images/photos/04.jpg" data-lightbox="imgage" data-title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
                     <img src="Images/photos/04.jpg" alt="Iceberg"></a>
                 </li>
                 <li>
+                    <p>The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.</p>
                     <a href="images/photos/05.jpg" data-lightbox="imgage" data-title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
                     <img src="Images/photos/05.jpg" alt="Desert"></a>
                 </li>
                 <li>
+                    <p>Fall is coming, I love when the leaves on the trees start to change color.</p>
                     <a href="images/photos/06.jpg" data-lightbox="imgage" data-title="Fall is coming, I love when the leaves on the trees start to change color.">
                     <img src="Images/photos/06.jpg" alt="Fall"></a>
                 </li>
                 <li>
+                    <p>I drove past this plantation yesterday, everything is so green!</p>
                     <a href="images/photos/07.jpg" data-lightbox="imgage" data-title="I drove past this plantation yesterday, everything is so green!">
                     <img src="Images/photos/07.jpg" alt="Plantation"></a>
                 </li>
                 <li>
+                    <p>My summer vacation to the Oregon Coast. I love the sandy dunes!</p>
                     <a href="images/photos/08.jpg" data-lightbox="imgage" data-title="My summer vacation to the Oregon Coast. I love the sandy dunes!">
                     <img src="Images/photos/08.jpg" alt="Dunes"></a>
                 </li>
                 <li>
+                    <p>We enjoyed a quiet stroll down this countryside lane.</p>
                     <a href="images/photos/09.jpg" data-lightbox="imgage" data-title="We enjoyed a quiet stroll down this countryside lane.">
                     <img src="Images/photos/09.jpg" alt="Countryside Lane"></a>
                 </li>
                 <li>
+                    <p>Sunset at the coast! The sky turned a lovely shade of orange.</p>
                     <a href="images/photos/10.jpg" data-lightbox="imgage" data-title="Sunset at the coast! The sky turned a lovely shade of orange.">
                     <img src="Images/photos/10.jpg" alt="Sunset"></a>
                 </li>
                 <li>
+                    <p>I did a tour of a cave today and the view of the landscape below was breathtaking.</p>
                     <a href="images/photos/11.jpg" data-lightbox="imgage" data-title="I did a tour of a cave today and the view of the landscape below was breathtaking.">
                     <img src="Images/photos/11.jpg" alt="Cave"></a>
                 </li>
                 <li>
+                    <p>I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.</p>
                     <a href="images/photos/12.jpg" data-lightbox="imgage" data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
                     <img src="Images/photos/12.jpg" alt="Bluebells"></a>
                 </li>
             </ul>
             </div>
         </section>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="tipuesearch/tipuesearch.min.js"></script>
-        <script>
-                $(document).ready(function() {
-                     $('#tipue_search_input').tipuesearch();
-                });
-        </script>
+        <script src="script.js"></script>
         <script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>
     </body>
 </html>
