@@ -1,8 +1,12 @@
+/* ---------- SEARCH BAR ---------- */
+
 .search {
     width: 100%;
     text-align:center;
     margin-top: 2em;
 }
+
+/* ---------- GALLERY ---------- */
 
 img {
     width: 100%;
@@ -17,9 +21,6 @@ ul {
     padding: 5%;
 }
 
-.photos p {
-    display: none;
-}
 /* ---------- MEDIA QUERIES ---------- */
 
 @media only screen and (min-width: 768px) {
